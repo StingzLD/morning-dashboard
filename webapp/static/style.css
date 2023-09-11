@@ -1,4 +1,29 @@
+@font-face {
+    font-family: lobster;
+    src: url('Fonts/Lobster-Regular.ttf');
+}
+
+@font-face {
+    font-family: playfair;
+    src: url('Fonts/PlayfairDisplay.ttf');
+}
+
+menu-title {
+    color: #FFE9FA;
+    font-family: lobster;
+    font-size: 60px;
+}
+
+category {
+    color: #85E6FF;
+    font-family: lobster;
+    font-size: 46px;
+}
+
 body {
     background: #000000;
-    color: #ffffff;
+    color: #FFF7DB;
+    font-family: playfair;
+    font-size: 40px;
+    text-align: center;
 }
