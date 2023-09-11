@@ -1,6 +1,5 @@
 import requests
 import os
-from datetime import datetime
 
 
 SHEETY_ENDPOINT = "https://api.sheety.co"
@@ -35,25 +34,3 @@ def get_meal(menu, date):
             side2 = meal['side2']
             snack = meal['snack']
             return main, side1, side2, snack
-
-
-if __name__ == '__main__':
-    menu = [{
-        'date': '2023-09-10',
-        'dayOfWeek': 'Monday',
-        'main': 'Peanut Butter & Jelly',
-        'side1': 'Berry Medley',
-        'side2': 'Yogurt',
-        'snack': 'Goldfish',
-        'id': 2
-    }]
-    # menu = get_menu("schoolLunch")
-    # print(data)
-
-    raw_date = datetime.today()
-    day_of_week = raw_date.strftime("%A")
-    date = raw_date.strftime("%Y-%m-%d")
-    print(day_of_week, date)
-
-    lunch_today = get_meal(menu, date)
-    print(lunch_today)
